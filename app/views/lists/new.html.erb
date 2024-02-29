@@ -1,0 +1,7 @@
+<div class="container border mt-3 p-2">
+  <h1 class="mt-4">My List</h1>
+  <%= simple_form_for @list do |form| %>
+    <%= form.input :name, label: 'Name' %>
+    <%= form.button :submit, 'Create list', class: 'btn btn-primary w-100' %>
+  <% end %>
+</div>
